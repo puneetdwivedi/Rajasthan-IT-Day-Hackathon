@@ -2,12 +2,12 @@ import axios from "axios";
 import store from "../store/index.js";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:5000"
+    baseURL: "https://rajasthan-it-day-hackathon.vercel.app"
 })
 
 
 const axiosInstanceWithHeader = axios.create({
-    baseURL: "http://localhost:5000"
+    baseURL: "https://rajasthan-it-day-hackathon.vercel.app"
 
 })
 axiosInstanceWithHeader.interceptors.request.use((config) => {

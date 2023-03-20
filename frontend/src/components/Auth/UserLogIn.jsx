@@ -37,7 +37,7 @@ const UserLogIn = () => {
 
     try {
       await axios
-        .post("http://localhost:5000/api/v1/user/login", {
+        .post("https://rajasthan-it-day-hackathon.vercel.app/api/v1/user/login", {
           email: e.email,
           password: e.password,
         })

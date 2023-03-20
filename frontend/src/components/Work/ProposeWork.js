@@ -22,7 +22,7 @@ const ProposeWork = () => {
   // const checkAlreadyProposed = async () => {
   //   const data = { workId: "6789hnjh", workerId: "845hdf" };
   //   await axios
-  //     .post("http://localhost:5000/api/v1/work/propose", data)
+  //     .post("https://rajasthan-it-day-hackathon.vercel.app/api/v1/work/propose", data)
   //     .then((result) => {
   //       if (result.status === 200) {
   //         if (result.data.already)

@@ -83,7 +83,7 @@ const PostWork = () => {
     console.log(errors);
     data.workLocation = workingLocation
     await axiosInstanceWithHeader
-      .post("http://localhost:5000/api/v1/work/post", data)
+      .post("https://rajasthan-it-day-hackathon.vercel.app/api/v1/work/post", data)
       .then((res) => {
         if (res.status === 200) {
           dispatch(alert_show({

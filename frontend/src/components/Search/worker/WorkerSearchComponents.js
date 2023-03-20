@@ -29,7 +29,7 @@ const WorkerSearchComponents = () => {
 
     await axios
       .get(
-        `http://localhost:5000/api/v1/search/cityandstate?state=${e.target.value}&&city=${e.target.value}`
+        `https://rajasthan-it-day-hackathon.vercel.app/api/v1/search/cityandstate?state=${e.target.value}&&city=${e.target.value}`
       )
       .then((res) => {
         setSearchResult(() => {
@@ -72,7 +72,7 @@ const WorkerSearchComponents = () => {
     setSearchVal(`${city},${state}`)
     await axios
       .get(
-        `http://localhost:5000/api/v1/search/worker?state=${state}&&city=${city}`
+        `https://rajasthan-it-day-hackathon.vercel.app/api/v1/search/worker?state=${state}&&city=${city}`
       )
       .then((res) => {
         console.log(res);

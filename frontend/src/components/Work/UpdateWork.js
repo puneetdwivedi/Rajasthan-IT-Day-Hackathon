@@ -25,7 +25,7 @@ const UpdateWork = () => {
   const onSubmit = async (data) => {
     console.log(data);
     await axios
-      .post(`http://localhost:5000/api/v1/work/update`, data)
+      .post(`https://rajasthan-it-day-hackathon.vercel.app/api/v1/work/update`, data)
       .then((res) => {
         if (res.status === 200) {
           console.log(res);
